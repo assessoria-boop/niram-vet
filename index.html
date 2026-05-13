@@ -12,8 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" /></noscript>
-  <link rel="preload" as="image" href="recepcao.jpg" />
-  <link rel="preload" as="image" href="logo.png" />
+  <link rel="preload" as="image" href="recepcao.jpg" fetchpriority="high" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -141,9 +140,13 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-size: cover;
-      background-position: center;
       z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .hero-overlay {
@@ -620,7 +623,7 @@
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-bg" style="background-image:url('recepcao.jpg');"></div>
+    <div class="hero-bg"><img src="recepcao.jpg" alt="" fetchpriority="high" decoding="sync" /></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-logo-circulo"><img src="logo.png" alt="Niram Vet" /></div>
