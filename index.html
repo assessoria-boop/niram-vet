@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TSKC53PZ');</script>
+  <!-- End Google Tag Manager -->
+  <title>Niram Vet – Centro Veterinário em Guarulhos</title>
+  <meta name="description" content="Clínica veterinária em Guarulhos com atendimento humanizado, estética animal e horário estendido até 22h. 5.0 no Google." />
+  <link rel="preload" as="image" href="recepcao.jpg" fetchpriority="high" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul: #1565C0;
+      --azul-claro: #1E88E5;
+      --azul-suave: #E3F2FD;
+      --verde: #22C55E;
+      --verde-hover: #16a34a;
+      --texto: #111;
+      --cinza: #6b7280;
+      --cinza-claro: #f4f4f5;
+      --borda: #e5e7eb;
+      --branco: #fff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      color: var(--texto);
+      background: var(--branco);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── TOPO ── */
+    .topo {
+      background: var(--azul);
+      color: rgba(255,255,255,0.9);
+      text-align: center;
+      padding: 9px 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .topo-dot {
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 48px;
+      border-bottom: 1px solid var(--borda);
+      background: var(--branco);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-circulo {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-circulo img, .hero-logo-circulo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
+    .nav-nome {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--azul);
+      letter-spacing: -0.5px;
+    }
+
+    .nav-badge {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--azul);
+      background: var(--azul-suave);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--verde);
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .nav-btn:hover { background: var(--verde-hover); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(255,255,255,0.92) 0%, rgba(235,244,255,0.88) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .hero-logo-circulo {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 28px;
+      box-shadow: 0 8px 28px rgba(21,101,192,0.35);
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--azul);
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+
+    .hero-subtitulo {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--azul);
+      margin-bottom: 28px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    .hero-localizacao {
+      margin-bottom: 32px;
+    }
+
+    .loc-texto {
+      background: white;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 999px;
+      padding: 10px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--texto);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      display: inline-block;
+    }
+
+    .loc-texto strong { color: var(--azul); }
+
+    .hero-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+
+    .btn-wpp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--verde);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      padding: 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(34,197,94,0.35);
+    }
+    .btn-wpp:hover { background: var(--verde-hover); transform: translateY(-2px); }
+    .btn-wpp svg { width: 22px; height: 22px; fill: white; }
+
+
+    /* ── PETS HERO ── */
+    .hero-pets {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      position: relative;
+      height: 280px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero-pets-bg {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 360px;
+      height: 240px;
+      background: var(--azul-claro);
+      border-radius: 50% 50% 0 0 / 60% 60% 0 0;
+    }
+
+    .hero-pets img {
+      position: relative;
+      z-index: 1;
+      height: 260px;
+      width: 48%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    /* ── STATS ── */
+    .stats {
+      border-top: 1px solid var(--borda);
+      border-bottom: 1px solid var(--borda);
+      padding: 28px 48px;
+    }
+
+    .stats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .stat { text-align: center; }
+    .stat-num { font-size: 28px; font-weight: 900; color: var(--azul); letter-spacing: -1px; }
+    .stat-label { font-size: 12px; color: var(--cinza); margin-top: 2px; font-weight: 500; }
+
+    /* ── SEÇÕES ── */
+    .sec {
+      padding: 88px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .sec-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--azul);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 12px;
+    }
+
+    .sec-titulo {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .sec-titulo span { color: var(--azul-claro); }
+
+    .sec-sub {
+      font-size: 16px;
+      color: var(--cinza);
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    /* ── SERVIÇOS ── */
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .servico-card {
+      background: var(--cinza-claro);
+      border-radius: 20px;
+      padding: 28px 22px;
+      transition: all 0.2s;
+    }
+
+    .servico-card:hover { background: var(--azul-suave); transform: translateY(-3px); }
+    .servico-icone { width: 44px; height: 44px; background: var(--azul-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+    .servico-icone svg { width: 22px; height: 22px; stroke: var(--azul); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .servico-card h3 { font-size: 15px; font-weight: 700; line-height: 1.4; }
+
+    /* ── POR QUE ── */
+    .sec-porque {
+      padding: 88px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .motivos { display: flex; flex-direction: column; gap: 8px; }
+
+    .motivo {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .motivo:hover { background: var(--azul-suave); border-color: #BBDEFB; }
+
+    .motivo-num {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: var(--azul);
+      color: white;
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .motivo h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+    .motivo p { font-size: 13px; color: var(--cinza); line-height: 1.5; }
+
+    /* ── DEPOIMENTOS ── */
+    .sec-depoi {
+      background: var(--cinza-claro);
+      padding: 88px 0;
+      color: var(--texto);
+    }
+
+    .sec-depoi-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+    .sec-depoi .sec-tag { color: var(--azul); }
+    .sec-depoi .sec-titulo { color: var(--texto); }
+
+    /* CARROSSEL */
+    .carrossel-wrap { position: relative; margin-top: 48px; overflow: hidden; }
+    .carrossel-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.4s ease;
+    }
+    .carrossel-slide {
+      flex: 0 0 calc(33.33% - 11px);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    /* Card estilo Google Reviews */
+    .google-card {
+      background: #202124;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .gc-header { display: flex; align-items: center; gap: 12px; }
+    .gc-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; font-weight: 700; color: white;
+      flex-shrink: 0;
+    }
+    .gc-nome { font-size: 14px; font-weight: 700; color: white; line-height: 1.3; }
+    .gc-info { font-size: 12px; color: #9aa0a6; }
+    .gc-estrelas { color: #fbbc04; font-size: 16px; letter-spacing: 1px; }
+    .gc-tempo { font-size: 12px; color: #9aa0a6; margin-top: -8px; }
+    .gc-texto { font-size: 14px; color: #e8eaed; line-height: 1.65; }
+    .carrossel-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 32px;
+    }
+    .carrossel-btn {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: white;
+      border: 1.5px solid #e2e8f0;
+      color: var(--azul);
+      font-size: 18px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .carrossel-btn:hover { background: var(--azul-suave); }
+    .carrossel-dots { display: flex; gap: 6px; }
+    .carrossel-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .carrossel-dot.ativo { background: var(--azul); }
+
+    /* ── CTA ── */
+    .sec-cta {
+      padding: 88px 48px;
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .sec-cta h2 {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .sec-cta h2 span { color: var(--azul-claro); }
+    .sec-cta p { font-size: 16px; color: var(--cinza); margin-bottom: 36px; line-height: 1.6; }
+
+    /* ── LOCALIZAÇÃO ── */
+    .sec-local { background: var(--cinza-claro); padding: 88px 48px; }
+
+    .sec-local-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border: 1px solid var(--borda);
+    }
+
+    .info-linha { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--cinza); line-height: 1.5; }
+    .info-linha .ico { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .info-linha strong { color: var(--texto); display: block; }
+
+    .mapa { border-radius: 24px; overflow: hidden; height: 340px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .mapa iframe { width: 100%; height: 100%; border: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--borda);
+      padding: 32px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-texto { font-size: 13px; color: var(--cinza); }
+    .footer-texto strong { color: var(--texto); }
+
+    /* ── BOTÃO FLUTUANTE ── */
+    .wpp-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 58px; height: 58px;
+      background: var(--verde);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(34,197,94,0.45);
+      text-decoration: none;
+      z-index: 999;
+      transition: all 0.2s;
+    }
+    .wpp-float:hover { transform: scale(1.1); }
+    .wpp-float svg { width: 28px; height: 28px; fill: white; }
+
+    /* ── RESPONSIVO ── */
+    @media (max-width: 900px) {
+      nav { padding: 14px 20px; }
+      nav .nav-badge { display: none; }
+      .hero { padding: 48px 24px 0; }
+      .hero h1 { font-size: 38px; }
+      .stats { padding: 24px 20px; }
+      .stats-inner { gap: 16px; }
+      .stat-num { font-size: 22px; }
+      .sec { padding: 56px 20px; }
+      .sec-titulo { font-size: 28px; }
+      .servicos-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .sec-porque { grid-template-columns: 1fr; gap: 40px; padding: 56px 20px; }
+      .sec-depoi { padding: 56px 0; }
+      .sec-depoi-inner { padding: 0 20px; }
+      .carrossel-slide { flex: 0 0 calc(100% - 0px); }
+      .sec-cta { padding: 56px 20px; }
+      .sec-cta h2 { font-size: 28px; }
+      .btn-wpp { font-size: 16px; padding: 16px; }
+      .sec-local { padding: 56px 20px; }
+      .sec-local-inner { grid-template-columns: 1fr; gap: 32px; }
+      .mapa { height: 240px; }
+      footer { padding: 24px 20px; flex-direction: column; text-align: center; }
+      .wpp-float { width: 64px; height: 64px; bottom: 20px; right: 20px; }
+      .wpp-float svg { width: 32px; height: 32px; }
+    }
+
+    @media (max-width: 420px) {
+      .hero h1 { font-size: 32px; }
+      .servicos-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSKC53PZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- TOPO -->
+  <div class="topo">
+    <span class="topo-dot"></span>
+    Atendimento disponível agora
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-circulo"><img src="logo.png" alt="Niram Vet" loading="lazy" /></div>
+      <span class="nav-nome">Niram Vet</span>
+      <span class="nav-badge">Centro Veterinário</span>
+    </a>
+    <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="nav-btn">Falar agora</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-bg"><img src="recepcao.jpg" alt="" fetchpriority="high" decoding="sync" /></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo-circulo"><img src="logo.png" alt="Niram Vet" /></div>
+      <h1>Niram Vet</h1>
+      <p class="hero-subtitulo">Centro Veterinário & Estética</p>
+      <div class="hero-localizacao">
+        <div class="loc-texto">📍 Localização privilegiada em <strong>Guarulhos</strong></div>
+      </div>
+      <div class="hero-btns">
+        <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="btn-wpp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat"><div class="stat-num">5.0 ⭐</div><div class="stat-label">Nota no Google</div></div>
+      <div class="stat"><div class="stat-num">Até 22h</div><div class="stat-label">Horário estendido</div></div>
+      <div class="stat"><div class="stat-num">+1000</div><div class="stat-label">Pets atendidos</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Atendimento humanizado</div></div>
+    </div>
+  </div>
+
+  <!-- GALERIA -->
+  <div style="background: var(--cinza-claro); padding: 88px 48px;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <span class="sec-tag">Nossa clínica</span>
+      <h2 class="sec-titulo">Um espaço pensado <span>para eles</span></h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:48px;height:300px;">
+        <img src="recepcao.jpg" alt="Recepção Niram Vet" style="width:100%;height:100%;object-fit:cover;border-radius:20px;" loading="lazy" />
+        <img src="recepcao2.jpg" alt="Fachada Niram Vet" style="width:100%;height:100%;object-fit:cover;border-radius:20px;" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <div class="sec">
+    <span class="sec-tag">O que fazemos</span>
+    <h2 class="sec-titulo">Tudo que seu pet precisa <span>em um só lugar</span></h2>
+    <p class="sec-sub">Da consulta de rotina à estética animal — cuidado completo com equipe especializada.</p>
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2.4-1.6 4.4-3.8 5.1C15.7 13 18 15.8 18 19v1H6v-1c0-3.2 2.3-6 5.8-6.9C9.6 11.4 8 9.4 8 7a5 5 0 0 1 4-4.9V2z"/></svg>
+        </div>
+        <h3>Consultas veterinárias</h3>
+        <p style="font-size:13px;color:var(--cinza);margin-top:8px;line-height:1.5;">Equipe veterinária qualificada com equipamentos modernos para diagnóstico preciso.</p>
+      </div>
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M7 3H5a2 2 0 0 0-2 2v2m16-4h-2a2 2 0 0 1 2 2v2M3 19v2a2 2 0 0 0 2 2h2M19 19v2a2 2 0 0 1-2 2h-2M8 12s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+        </div>
+        <h3>Estética animal</h3>
+        <p style="font-size:13px;color:var(--cinza);margin-top:8px;line-height:1.5;">Banho, tosa e cuidados especiais para seu pet ficar lindo e cheiroso.</p>
+      </div>
+      <div class="servico-card">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Atendimento humanizado</h3>
+        <p style="font-size:13px;color:var(--cinza);margin-top:8px;line-height:1.5;">Cuidado responsável e carinhoso focado no bem-estar do seu animal de estimação.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- POR QUE -->
+  <div style="background: var(--cinza-claro); padding: 1px 0;">
+    <div class="sec-porque">
+      <div>
+        <span class="sec-tag">Por que a Niram Vet?</span>
+        <h2 class="sec-titulo" style="font-size:32px;">Cuidado responsável.<br /><span>Bem-estar garantido.</span></h2>
+        <p class="sec-sub" style="margin-bottom:0;">Muito além de uma clínica — somos parceiros na saúde do seu pet.</p>
+      </div>
+      <div class="motivos">
+        <div class="motivo">
+          <div class="motivo-num">01</div>
+          <div><h4>5.0 no Google</h4><p>Avaliação máxima com tutores satisfeitos em Guarulhos.</p></div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">02</div>
+          <div><h4>Horário estendido até 22h</h4><p>Para você que trabalha e precisa de flexibilidade no atendimento.</p></div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">03</div>
+          <div><h4>Estrutura moderna</h4><p>Equipamentos de ponta para um diagnóstico preciso e seguro.</p></div>
+        </div>
+        <div class="motivo">
+          <div class="motivo-num">04</div>
+          <div><h4>Clínica + Estética</h4><p>Consulta e banho e tosa no mesmo lugar. Praticidade total.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEPOIMENTOS -->
+  <div class="sec-depoi">
+    <div class="sec-depoi-inner">
+      <span class="sec-tag">O que dizem sobre nós</span>
+      <h2 class="sec-titulo" style="font-size:32px;">Somos <span style="color:var(--azul);">5 Estrelas</span> no Google!</h2>
+      <div class="carrossel-wrap">
+        <div class="carrossel-track" id="carrosselTrack">
+          <div class="carrossel-slide">
+            <div class="google-card">
+              <div class="gc-header">
+                <div class="gc-avatar" style="background:#e67c73;">A</div>
+                <div>
+                  <div class="gc-nome">Alexandre Dalto</div>
+                  <div class="gc-info">8 avaliações</div>
+                </div>
+              </div>
+              <div class="gc-estrelas">★★★★★</div>
+              <div class="gc-tempo">3 meses atrás</div>
+              <div class="gc-texto">"Atendimento maravilhoso lugar lindo.. fácil acesso gostei de mais tenho yorkshire e uma Lulu da palmerania.. ficaram lindas e muito cheirosas"</div>
+            </div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="google-card">
+              <div class="gc-header">
+                <div class="gc-avatar" style="background:#7986cb;">S</div>
+                <div>
+                  <div class="gc-nome">Silvana Almenara</div>
+                  <div class="gc-info">8 avaliações</div>
+                </div>
+              </div>
+              <div class="gc-estrelas">★★★★★</div>
+              <div class="gc-tempo">2 meses atrás</div>
+              <div class="gc-texto">"A clínica está acolhedora! O atendimento maravilhoso! Tudo lindo pra receber nossos filhos 4 patas! 🐾 meu Thorzinho ama!"</div>
+            </div>
+          </div>
+          <div class="carrossel-slide">
+            <div class="google-card">
+              <div class="gc-header">
+                <div class="gc-avatar" style="background:#57bb8a;">C</div>
+                <div>
+                  <div class="gc-nome">Carla Marabesi</div>
+                  <div class="gc-info">9 avaliações</div>
+                </div>
+              </div>
+              <div class="gc-estrelas">★★★★★</div>
+              <div class="gc-tempo">1 mês atrás</div>
+              <div class="gc-texto">"Meu Ozzy ama ir ai tomar banho!"</div>
+            </div>
+          </div>
+        </div>
+        <div class="carrossel-nav">
+          <button class="carrossel-btn" onclick="moverCarrossel(-1)">&#8592;</button>
+          <div class="carrossel-dots">
+            <div class="carrossel-dot ativo" onclick="irParaSlide(0)"></div>
+            <div class="carrossel-dot" onclick="irParaSlide(1)"></div>
+            <div class="carrossel-dot" onclick="irParaSlide(2)"></div>
+          </div>
+          <button class="carrossel-btn" onclick="moverCarrossel(1)">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="sec-cta">
+    <h2>A saúde do seu pet <span>não pode esperar.</span></h2>
+    <p>Entre em contato agora e receba atendimento imediato da nossa equipe.</p>
+    <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="btn-wpp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+  </div>
+
+  <!-- LOCALIZAÇÃO -->
+  <div class="sec-local">
+    <div class="sec-local-inner">
+      <div>
+        <span class="sec-tag">Onde estamos</span>
+        <h2 class="sec-titulo" style="font-size:32px;">Localização <span>privilegiada</span><br />em Guarulhos</h2>
+        <div class="info-box">
+          <div class="info-linha">
+            <span class="ico">📍</span>
+            <div><strong>Endereço</strong>Av. Dr. Renato de Andrade Maia, 62<br />Parque Renato Maia – Guarulhos – SP</div>
+          </div>
+          <div class="info-linha">
+            <span class="ico">🕐</span>
+            <div><strong>Horário</strong>Atendimento até as 22h, todos os dias</div>
+          </div>
+          <div class="info-linha">
+            <span class="ico">📞</span>
+            <div><strong>Telefone / WhatsApp</strong>(11) 98306-1884</div>
+          </div>
+        </div>
+        <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="btn-wpp" style="margin-top:24px;font-size:15px;padding:14px 24px;">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar agora
+        </a>
+      </div>
+      <div class="mapa" id="mapaWrap" style="cursor:pointer;position:relative;" onclick="carregarMapa()">
+        <div id="mapaPlaceholder" style="width:100%;height:100%;background:#e2e8f0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;border-radius:24px;">
+          <span style="font-size:32px;">📍</span>
+          <span style="font-size:14px;font-weight:600;color:#475569;">Clique para ver no mapa</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span style="font-size:20px;font-weight:900;color:#1565C0;letter-spacing:-0.5px;">Niram Vet</span>
+    <div class="footer-texto">
+      <strong>Niram Vet Centro Veterinário</strong> · Av. Dr. Renato de Andrade Maia, 62 – Guarulhos – SP<br />
+      Cuidado responsável. Bem-estar garantido.
+    </div>
+    <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="nav-btn">Falar no WhatsApp</a>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE -->
+  <a href="https://wa.me/5511983061884?text=Ol%C3%A1%2C%20encontrei%20voc%C3%AAs%20pelo%20Google%20e%20gostaria%20de%20atendimento.%20%5BN%C3%A3o%20apague%20esta%20mensagem%20para%20atendimento%20imediato%5D" class="wpp-float" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    function carregarMapa() {
+      var wrap = document.getElementById('mapaWrap');
+      var placeholder = document.getElementById('mapaPlaceholder');
+      if (placeholder) placeholder.remove();
+      wrap.onclick = null;
+      wrap.style.cursor = 'default';
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.5!2d-46.533!3d-23.453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzEwLjgiUyA0NsKwMzEnNTguOCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+      wrap.appendChild(iframe);
+    }
+
+    var slideAtual = 0;
+    var totalSlides = document.querySelectorAll('.carrossel-slide').length;
+
+    function atualizarCarrossel() {
+      var track = document.getElementById('carrosselTrack');
+      var slideW = track.querySelector('.carrossel-slide').offsetWidth + 16;
+      track.style.transform = 'translateX(-' + (slideAtual * slideW) + 'px)';
+      document.querySelectorAll('.carrossel-dot').forEach(function(d, i) {
+        d.classList.toggle('ativo', i === slideAtual);
+      });
+    }
+
+    function moverCarrossel(dir) {
+      slideAtual = (slideAtual + dir + totalSlides) % totalSlides;
+      atualizarCarrossel();
+    }
+
+    function irParaSlide(i) {
+      slideAtual = i;
+      atualizarCarrossel();
+    }
+
+    // Swipe no mobile
+    var startX = 0;
+    var track = document.getElementById('carrosselTrack');
+    track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; });
+    track.addEventListener('touchend', function(e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) moverCarrossel(diff > 0 ? 1 : -1);
+    });
+  </script>
+
+</body>
+</html>
