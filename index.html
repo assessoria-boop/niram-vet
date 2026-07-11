@@ -525,20 +525,32 @@
     /* ── PLANO PETLOVE ── */
     .sec-petlove { background: white; padding: 72px 48px; text-align: center; }
     .sec-petlove-inner { max-width: 1100px; margin: 0 auto; }
+    .petlove-grid {
+      margin: 40px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 900px;
+    }
     .petlove-logo-card {
-      margin: 32px auto 0;
-      max-width: 340px;
       background: white;
       border: 1px solid var(--borda);
-      border-radius: 24px;
-      padding: 28px 36px;
+      border-radius: 20px;
+      padding: 24px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;
     }
     .petlove-logo-card img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
       height: auto;
-      border-radius: 16px;
+      border-radius: 12px;
       display: block;
+      object-fit: contain;
     }
 
     /* ── LOCALIZAÇÃO ── */
@@ -651,6 +663,11 @@
 
       .sec-cta { padding: 56px 20px; }
       .sec-cta h2 { font-size: 28px; }
+
+      .sec-petlove { padding: 56px 20px; }
+      .petlove-grid { grid-template-columns: 1fr; gap: 16px; max-width: 300px; }
+      .petlove-logo-card { aspect-ratio: auto; padding: 28px; }
+      .petlove-logo-card img { max-height: 90px; }
 
       .sec-local { padding: 56px 20px; }
       .sec-local-inner { grid-template-columns: 1fr; gap: 32px; }
@@ -859,8 +876,8 @@
       <div class="motivo">
         <div class="motivo-num">05</div>
         <div>
-          <h4>Aceitamos plano PetLove</h4>
-          <p>Atendemos o plano de saúde PetLove para o seu pet com mais comodidade.</p>
+          <h4>Aceitamos planos de saúde</h4>
+          <p>Atendemos PetLove, PetLife, Dog Life e Dr. Pett para o seu pet com mais comodidade.</p>
         </div>
       </div>
     </div>
@@ -882,10 +899,21 @@
 <!-- PLANO PETLOVE -->
 <div class="sec-petlove">
   <div class="sec-petlove-inner">
-    <span class="sec-tag">Plano de saúde</span>
-    <h2 class="sec-titulo" style="font-size:28px;">Aceitamos o plano <span>PetLove</span></h2>
-    <div class="petlove-logo-card">
-      <img src="petlove.jpeg" alt="Plano de saúde PetLove" loading="lazy" decoding="async" />
+    <span class="sec-tag">Planos de saúde</span>
+    <h2 class="sec-titulo" style="font-size:28px;">Aceitamos os principais <span>planos de saúde</span></h2>
+    <div class="petlove-grid">
+      <div class="petlove-logo-card">
+        <img src="petlove.jpeg" alt="Plano de saúde PetLove" loading="lazy" decoding="async" />
+      </div>
+      <div class="petlove-logo-card">
+        <img src="petlife.png" alt="Plano de saúde PetLife" loading="lazy" decoding="async" />
+      </div>
+      <div class="petlove-logo-card">
+        <img src="dog%20life.png" alt="Plano de saúde Dog Life" loading="lazy" decoding="async" />
+      </div>
+      <div class="petlove-logo-card">
+        <img src="loogoo%20dr%20pett.png" alt="Plano de saúde Dr. Pett" loading="lazy" decoding="async" />
+      </div>
     </div>
   </div>
 </div>
@@ -914,8 +942,8 @@
         <div class="info-linha">
           <span class="ico">💚</span>
           <div>
-            <strong>Plano de saúde</strong>
-            Aceitamos o plano de saúde PetLove
+            <strong>Planos de saúde</strong>
+            Aceitamos PetLove, PetLife, Dog Life e Dr. Pett
           </div>
         </div>
       </div>
